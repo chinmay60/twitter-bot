@@ -19,7 +19,7 @@ for tweet in tweepy.Cursor(api.search, q='#funfact').items(count):
         tweet.retweet()
         print('Retweet published successfully.')
         count = int(10000)
-        sleep(3600)
+        sleep(1)
 
     except tweepy.TweepError as error:
         print('\nError. Retweet not successful. Reason: ')
